@@ -52,3 +52,14 @@ OpenClaw 首次遇到路由認證缺失；在隔離設定明確指定 ChatGPT �
 兩次使用不同 session ID 的 local CLI 對話，均透過 AGENTS.md 找到私人資料並讀出虛構專案、來源日期與專用驗收碼。第二輪由測試程式變更狀態與驗收碼，新對話讀到新值。每輪有三次成功 read；另有兩次先誤讀工作區根目錄後自行修正路徑的失敗嘗試，最終結果正確。
 
 測試資料放在 agent workspace 的 data 子目錄，符合 tools.fs.workspaceOnly。未驗證工作區外的檔案存取、Gateway 聊天渠道或桌面 UI。四個受追蹤的正式設定／認證檔雜湊未變；agent 沒有修改測試來源。測試後已刪除隔離狀態、登入副本與安裝快取；未啟動或重啟正式 Gateway。
+
+## 本機 WebChat 與 Hermes 桌面補充驗收
+
+日期：2026-10-31，macOS。此節補足前述「桌面 UI／Gateway 未測」的歷史範圍。
+
+- OpenClaw 2026.10.8 + @openclaw/codex 2026.10.8：獨立 loopback Gateway、瀏覽器設定檔與登入狀態；從真實 WebChat UI 提問，兩輪讀取及新對話取得更新資料均通過。
+- Hermes 來源提交 bf0203a794a 建置的 Electron 桌面：先通過訊息明確指定指標的兩輪測試，再完成不提供路徑的自動載入驗收。桌面預設目錄、terminal.cwd 與啟動工作目錄一致；兩個不同工作階段的系統提示包含各自的 AGENTS.md 指標。第二輪更換指標、保留舊資料，新工作階段讀到新位置及新隨機碼。來源檔案雜湊未被 agent 改變。
+
+自動載入驗收的追蹤範圍為 Hermes 設定／登入、Codex 設定／登入與 OpenClaw 設定，五個檔案雜湊未變。測試程序、憑證副本與暫存環境已移除；未重啟正式服務。模型使用 gpt-6.1-sol。
+
+未測原生 OpenClaw macOS App、Codex 桌面、Telegram／Discord、Hermes 原生資料夾選擇器及既有對話即時更新。部分 UI 曾顯示暫時 metadata 錯誤或「正在喚醒」文字，但實際問答完成；不宣稱整體 UI 無瑕疵。應用程式狀態隔離不是 OS 沙箱。設定方式見 [README](../README.md#webchat-與-hermes-桌面接入)。

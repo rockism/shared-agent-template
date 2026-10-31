@@ -22,4 +22,4 @@ OpenClaw 2026.10.8 的 local CLI 已通過兩次新對話讀取測試。把上�
 
 若啟用 `tools.fs.workspaceOnly`，私人資料必須在允許的工作區內；可把初始化目標選為 agent workspace 下尚不存在的 data 子目錄。不要為讀取資料直接放寬正式檔案權限。
 
-先確認模型登入與所選 runtime 插件可用，再測試本範本。採用 codex harness 的獨立測試環境需要安裝相符的 @openclaw/codex 插件；只建立設定檔不代表已安裝。測試成功不代表 Gateway 或聊天渠道整合已驗收。細節見 [驗證紀錄](../docs/validation.md)。
+先確認模型登入與所選 runtime 插件可用，再測試本範本。採用 codex harness 的獨立測試環境需要安裝相符的 @openclaw/codex 插件；只建立設定檔不代表已安裝。local CLI 測試本身不代表聊天渠道通過；後續本機 WebChat 已另行驗收，設定與邊界見 [README 的介面接入說明](../README.md#webchat-與-hermes-桌面接入)。Telegram／Discord 仍未驗收。細節見 [驗證紀錄](../docs/validation.md)。
