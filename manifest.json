@@ -1,7 +1,7 @@
 {
   ".gitignore": "e860981aafd52b4386a50e643e96b1583a5c49c281e04301c57a9eb831aea155",
   "LICENSE": "923ab88444cbfe5b3fe8b9e4a82fd6833eb54d265bb19d5e888a115d973f6aca",
-  "README.md": "b2b1a025b538b7a47c18233a8fd32e42868704964a80542220a8ff3ee3d87f72",
+  "README.md": "bb111ed5dd7cd34b512f1438e87626ffb5f0c98a230703bd2ab25ab8d9304886",
   "adapters/README.md": "d5d5c62a77fd7c85eebcca9b09de9468d59c5140c35affd697940e1d13140341",
   "adapters/codex.md": "5b7016aabdb6fcba0ae4cbd05833dc9846f12b8d403f823c2ea9be6bbedb387a",
   "adapters/hermes.md": "f148417cb09dd19b8abd0d2e47e36644e1acaf6151960087fe947702ab26ebe5",
@@ -9,7 +9,7 @@
   "docs/design.md": "9b33bdf1b58f764c52df3a5c0e701212183d565419cc8327c47c0997d70674d6",
   "docs/maintenance.md": "36b0fd913883cb52acaf9359b67128e67615aa44471ae165b873df9bc517439a",
   "docs/release-review.md": "8de40d830fb39514f168592b7fcfcc5efa8a8583e9768373d7a0e08652587bf7",
-  "docs/validation.md": "d2d3d76a9d931a751794d16b9a18ba0e1ee26b958ada3cfdf790bee34102b7aa",
+  "docs/validation.md": "0b3e8b2c6c6548f8428fad40cb908259e625ad3b177d0b0994b50642d6ee24ec",
   "examples/workspace/README.md": "5f325bd1581fcbb2d6506e6e9c45289e226da430bd6fd9707b1910295d52e568",
   "examples/workspace/candidates/README.md": "ce5566cf2a18ce6ec8a166ae74fb76ddddd0c865078d64382a9a78e24b0a018b",
   "examples/workspace/knowledge/project.md": "a0a29cbfe40bbff102965f67d9bc88f79790641be8df10e3efb0e4d9c70934f9",
